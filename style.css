@@ -1,0 +1,169 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+body {
+	background-image: url(./background-image.png);
+	background-size: auto;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.wrapper {
+	width: 70vw;
+	height: 70vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	background-color: #3f51b58c;
+	/* background-color: #2195f35b; */
+	border-radius: 15px;
+	justify-content: center;
+	animation: fadein forwards .2s;
+}
+
+.logo {
+	opacity: 0;
+	width: 10vw;
+	margin: 10px 0;
+	animation: fadein forwards .7s;
+}
+
+.title {
+	font-size: 18px;
+	color: white;
+	font-family: Montserrat;
+	font-weight: 500;
+	width: 30vw;
+	animation: fadein forwards .8s;
+
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30vw;
+}
+
+.text-input {
+	width: 30vw;
+	height: 30px;
+	padding-left: 15px;
+	margin: 5px 0;
+	border: 2px solid #3f51b5;
+	border-radius: 5px;
+	animation: fadein forwards 1s;
+}
+
+.label {
+	font-family: Montserrat;
+	color: white;
+	animation: fadein forwards 1s;
+}
+
+.btn-sb {
+	margin: 20px 0;
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	border: 1px solid white;
+	background-color: #2196f3;
+	font-family: Montserrat;
+	color: white;
+	cursor: pointer;
+	animation: fadein forwards 1.2s;
+}
+
+span {
+	font-weight: 600;
+}
+
+@media (max-width: 769px) {
+	.wrapper {
+		flex-direction: column;
+		height: 80vh;
+		width: 80vw;
+	}
+
+	.title {
+		width: 70vw;
+	}
+
+	.logo {
+		width: 20vw;
+	}
+}
+
+@media (max-width: 426px) {
+	.title {
+		font-size: 16px;
+	}
+
+	.text-input {
+		width: 50vw;
+	}
+
+	.label {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 321px) {
+	.title {
+		font-size: 12px;
+	}
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.form-control {
+	position: relative;
+	margin: 20px 0 40px;
+	width: 300px;
+}
+
+.form-control input {
+	background-color: transparent;
+	border: 0;
+	border-bottom: 2px #fff solid;
+	display: block;
+	width: 100%;
+	padding: 12px 0;
+	font-size: 18px;
+	color: rgb(255, 255, 255);
+}
+
+.form-control input:focus, 
+.form-control input:valid {
+	outline: 0;
+	border-bottom-color: white;
+}
+
+.form-control label {
+	position: absolute;
+	top: 15px;
+	left: 0;
+	font-family: Montserrat;
+}
+
+.form-control label span {
+	display: inline-block;
+	font-size: 16px;
+	min-width: 5px;
+	transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + label span {
+	color: white;
+	transform: translateY(-30px);
+}
