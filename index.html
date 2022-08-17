@@ -12,28 +12,33 @@
 
 <body>
 	<img class="logo" src="./logo-ru.png" alt="">
-	<div class="wrapper">
+	<div class="wrapper wrapper-show">
 		<h2 class="title">Привет!<br>
 			Узнай первым когда будет открыт ресторан «Седьмое небо» и запущены экскурсии на самое высокое сооружение
 			Европы - <span>Останкинскую телебашню</span>.
 			<br><br>Для этого заполни форму. Когда мы откроемся, то отправим сообщение.</h2>
 		<form class="form" action="">
 			<div class="form-control">
-				<input type="text" required>
+				<input class="text-input" type="text" required>
 				<label>Фамилия и имя</label>
 			</div>
 			<div class="form-control">
-				<input type="phone" required>
+				<input class="text-input" type="phone" required>
 				<label>Номер телефона</label>
 			</div>
 			<div class="form-control">
-				<input type="email" required>
+				<input class="text-input" type="email" required>
 				<label>E-mail</label>
 			</div>
 			<label class="label"><input required class="checkbox" type="checkbox">Согласен на обработку персональных
 				данных</label>
-			<button class="btn-sb">Отправить</button>
+			<input type="submit" class="btn-sb"></input>
 		</form>
+	</div>
+	<div class="success-block">
+		<h2 class="title">
+			Форма отправлена!<br>До встречи на высоте!
+		</h2>
 	</div>
 	<script src="./script.js"></script>
 </body>

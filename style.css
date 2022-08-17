@@ -10,10 +10,22 @@ body {
 
 }
 
+.success-block {
+	min-height: 5vh;
+	text-align: center;
+	background-color: #3f51b58c;
+	border-radius: 15px;
+	animation: fadein forwards .2s;
+	display: none;
+}
+.success-show {
+	display: block;
+}
+
 .wrapper {
 	width: 70vw;
 	height: 70vh;
-	display: flex;
+	display: none;
 	align-items: center;
 	text-align: center;
 	background-color: #3f51b58c;
@@ -21,6 +33,10 @@ body {
 	border-radius: 15px;
 	justify-content: center;
 	animation: fadein forwards .2s;
+}
+
+.wrapper-show {
+	display: flex;
 }
 
 .logo {
@@ -47,7 +63,7 @@ body {
 	width: 30vw;
 }
 
-.text-input {
+/* .text-input {
 	width: 30vw;
 	height: 30px;
 	padding-left: 15px;
@@ -55,7 +71,7 @@ body {
 	border: 2px solid #3f51b5;
 	border-radius: 5px;
 	animation: fadein forwards 1s;
-}
+} */
 
 .label {
 	font-family: Montserrat;
