@@ -83,7 +83,7 @@ span {
 @media (max-width: 769px) {
 	.wrapper {
 		flex-direction: column;
-		height: 85vh;
+		min-height: 85vh;
 		width: 80vw;
 	}
 
